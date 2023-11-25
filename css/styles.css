@@ -81,6 +81,7 @@ ul, ol {
 
 .page-header {
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -122,6 +123,10 @@ ul, ol {
     color: #404BBF;
 }
 
+.studio-line {
+    color: #404bbf;
+}
+
 .studio-line::after {
     content: "";
     position: absolute;
@@ -160,6 +165,7 @@ ul, ol {
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/heroimage.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     background-clip: padding-box;
     max-width: 1440px;
@@ -294,7 +300,7 @@ ul, ol {
 
 .social-list-link:hover,
 .social-list-link:focus {
-    background-color: #31D0AA;
+    background-color: #404bbf;
 }
 
 .social-media-item {
@@ -335,14 +341,15 @@ ul, ol {
 
 .portfolio-overlay {
     position: absolute;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     top: 0;
     left: 0;
     color: #F4F4FD;
     background-color: #4D5AE5;
     width: 360px;
     height: 300px;
-    padding-left: 32px;
-    padding-top: 40px;
+    padding: 40px 32px;
     overflow: auto;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -416,6 +423,9 @@ transform: translateY(0%);
     font-weight: 400;
     line-height: 1.5; 
     letter-spacing: 0.02em;
+}
+
+.footer-logo-text {
     margin-right: 120px;
 }
 
@@ -424,13 +434,14 @@ transform: translateY(0%);
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
 
 .social-media-footer {
     display: flex;
+    align-items: baseline
 }
 
 .footer-social-media-list {
@@ -443,4 +454,20 @@ transform: translateY(0%);
 .footer-social-media-item {
     width: 40px;
     height: 40px;
+}
+
+.footer-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    width: 100%;
+    height: 100%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-list-link:hover,
+.footer-list-link:hover {
+    background-color: #31d0aa;
 }
