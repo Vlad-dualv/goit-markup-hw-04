@@ -468,6 +468,6 @@ transform: translateY(0%);
 }
 
 .footer-list-link:hover,
-.footer-list-link:hover {
+.footer-list-link:focus {
     background-color: #31d0aa;
 }
